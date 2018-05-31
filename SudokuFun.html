@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sudoku Notes</title>
+</head>
+
+<body>
+  <div class="square">
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+            <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+            <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+            <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+    <div class="metacontainer open">
+        <div class="control"></div>
+        <div class="container">
+            <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+            <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+            <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+            <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+            <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+            <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+            <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+            <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+            <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+          <div class="container">
+              <div class="wrap"><div class="inner inner-one"></div><div class="label">red</div></div>
+              <div class="wrap"><div class="inner inner-two"></div><div class="label">orange</div></div>
+              <div class="wrap"><div class="inner inner-three"></div><div class="label">yellow</div></div>
+              <div class="wrap"><div class="inner inner-four"></div><div class="label">light green</div></div>
+              <div class="wrap"><div class="inner inner-five"></div><div class="label">dark green</div></div>
+              <div class="wrap"><div class="inner inner-six"></div><div class="label">light blue</div></div>
+              <div class="wrap"><div class="inner inner-seven"></div><div class="label">dark blue</div></div>
+              <div class="wrap"><div class="inner inner-eight"></div><div class="label">light purple</div></div>
+              <div class="wrap"><div class="inner inner-nine"></div><div class="label">dark purple</div></div>
+          </div>
+    </div>
+  </div>
+
+
+  <style>
+    :root {
+  --red: red;
+  --orange: orange;
+  --yellow: hsl(56, 94%, 68%);
+  --lightgreen: #bada55;
+  --darkgreen: green;
+  --lightblue: lightblue;
+  --darkblue: blue;
+  --lightpurple: rgb(209, 149, 250);
+  --darkpurple: purple;
+}
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+      background: linear-gradient(to right, rgb(193, 176, 255), rgb(207, 255, 215));
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 0 5px 0;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+    }
+
+    .square {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 20px;
+      /* height: calc(100vh - 40px); */
+    }
+    .metacontainer {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 10px;
+      background: hsla(0, 0%, 100%, 70%);
+      padding: 0 20px 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 3s ease;
+    }
+
+    .control {
+        grid-column: 3 / -1;
+        justify-self: end;
+        align-self: end;
+    }
+
+    .metacontainer .label {
+      padding-bottom: 5px;
+      display: none;
+    }
+
+    .label {
+        font-size: 0.5em;
+    }
+
+.close .label {
+    display: block;
+}
+
+.close *> .inner {
+    width: 2em;
+    height: 2em;
+    margin: 0.8rem;
+}
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+
+    }
+
+    .wrap {
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    background: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .inner {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    opacity: 0;
+    margin: 2px;
+    transition: opacity 0.55s ease;
+
+    }
+
+    .wrap:hover {
+    cursor: pointer;
+    }
+
+    .show > .inner {
+    opacity: 1;
+    }
+
+    .control {
+        padding-top: 1em;
+    }
+        .zoom {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 10px;
+      background: hsla(0, 0%, 100%, 70%);
+      padding: 0 20px 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        grid-column: 1 / -1;
+        height: 90vh;
+        transition: all 3s ease;
+
+    }
+
+    .control:hover {
+        cursor: pointer;
+    }
+    .control::before {
+        content: "+"
+    }
+    .close > .control::before {
+    content: "close x";
+    }
+
+            .inner-one {
+            background-color: var(--red);
+            }
+
+            .inner-two {
+            background-color: var(--orange);
+            }
+
+            .inner-three {
+            background-color: var(--yellow);
+            }
+
+            .inner-four {
+            background-color: var(--lightgreen);
+            }
+
+            .inner-five {
+            background-color: var(--darkgreen);
+            }
+
+            .inner-six {
+            background-color: var(--lightblue);
+            }
+
+            .inner-seven {
+            background-color: var(--darkblue);
+            }
+
+            .inner-eight {
+            background-color: var(--lightpurple);
+            }
+
+            .inner-nine {
+            background-color: var(--darkpurple);
+            }
+
+            .hide {
+                display: none;
+            }
+
+</style>
+
+  <script>
+    const circles = document.querySelectorAll(".wrap");
+    const controls = document.querySelectorAll('.control');
+    const meta = document.querySelectorAll('.metacontainer');
+    const open = document.querySelectorAll('.open');
+
+
+function toggleColor() {
+  this.classList.toggle('show');
+}
+
+function toggleOpen() {
+    this.parentNode.classList.toggle('open');
+    this.parentNode.classList.toggle('close');
+}
+
+function toggleZoom() {
+      this.parentNode.classList.toggle('zoom');
+        for (let i = 0; i <meta.length; i++) {
+            if (meta[i].classList.contains("zoom")) {
+                continue;
+            }
+            else if (meta[i].classList.contains("open")){
+                meta[i].classList.toggle("hide");
+            }
+        }
+    }
+
+
+
+
+
+circles.forEach(circle => circle.addEventListener('click', toggleColor));
+controls.forEach(control => control.addEventListener('click', toggleZoom));
+controls.forEach(control => control.addEventListener('click', toggleOpen));
+  </script>
+</body>
+
+</html>
